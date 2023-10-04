@@ -17,7 +17,13 @@ public class Variaveis {
         double mediaDoFilme = (9.8 + 7.0 + 8.0) / 3;
         System.out.println("Média Geral: " + mediaDoFilme);
 
-        String sinopse = "Filme de suspense, estrelando com Asthon kutcher";
+        // String sinopse = "Filme de suspense, estrelando com Asthon kutcher";
+
+        String sinopse = """
+                         Filme de suspense
+                         Estrelando Ashton Kutcher
+                         """;
+
         System.out.println(sinopse);
     }
 }
