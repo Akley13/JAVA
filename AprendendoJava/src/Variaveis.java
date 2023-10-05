@@ -15,7 +15,7 @@ public class Variaveis {
         System.out.println("Plano: " + planoAssinatura);
 
         double mediaDoFilme = (9.8 + 7.0 + 8.0) / 3;
-        System.out.println("Média Geral: " + mediaDoFilme);
+        System.out.printf("Média do filme: %.2f \n", mediaDoFilme);
 
         // String sinopse = "Filme de suspense, estrelando com Asthon kutcher";
 
@@ -24,6 +24,11 @@ public class Variaveis {
                          Estrelando Ashton Kutcher
                          """;
 
-        System.out.println(sinopse);
+        System.out.print(sinopse);
+
+        double classificacao = mediaDoFilme / 2;
+        System.out.printf("Classificação Geral: %.2f", classificacao);
+
+
     }
 }
