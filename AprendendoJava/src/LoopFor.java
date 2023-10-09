@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Loops {
+public class LoopFor {
     public static void main(String[] args) {
         Scanner inputData = new Scanner(System.in);
 
