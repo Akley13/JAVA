@@ -1,22 +1,33 @@
+import java.util.Scanner;
+
 public class UtilizandoSwitchCase {
     public static void main(String[] args) {
+        Scanner inputData = new Scanner(System.in);
 
-        int melhorJogo = 2;
-        String jogos = "";
+        System.out.println("QUAL O MELHOR JOGO?");
 
-        switch (melhorJogo){
-            case 1:
-                jogos = "God of War";
-                break;
-            case 2:
-                jogos = "The last of us";
-                break;
-            case 3:
-                jogos = "Lies of P";
-                break;
-        }
+        String nomeDoJogo;
 
-        System.out.println("O melhor jogo é " + jogos);
+        String jogos = """
+                       1- God of War
+                       2- The last of us
+                       3- Lies of P
+                       4- Elden Ring
+                       """;
+
+        System.out.println(jogos);
+
+        int melhorJogo = inputData.nextInt();
+
+        nomeDoJogo = switch (melhorJogo) {
+            case 1 -> "God of War";
+            case 2 -> "The last of us";
+            case 3 -> "Lies of P";
+            case 4 -> "Elden Ring";
+            default -> "OPÇÃO INVÁLIDA";
+        };
+
+        System.out.println("MELHOR JOGO DA SUA VIDA: " + nomeDoJogo);
 
     }
 }
