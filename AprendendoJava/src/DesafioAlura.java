@@ -29,19 +29,15 @@ public class DesafioAlura {
         };
 
         System.out.println("\nValor de depósito inicial: ");
-        double saldoInicial = inputData.nextDouble();
-
-        System.out.println("\n**********************************************************");
+        double saldo = inputData.nextDouble();
 
         System.out.println("\n******************** DADOS DO CLIENTE ********************");
 
         System.out.printf("\nNome completo: %s", nomeCompleto);
         System.out.printf("\nTipo de conta: %s", contaEscolhida);
-        System.out.printf("\nSaldo: R$ %.2f", saldoInicial);
+        System.out.printf("\nSaldo: R$ %.2f", saldo);
 
-        System.out.println("\n\n**********************************************************");
-
-        System.out.println("\nXXXXXXXXXXXXXXXXXXXXXXXXX OPERAÇÕES XXXXXXXXXXXXXXXXXXXXXXXX");
+        System.out.println("\n\nXXXXXXXXXXXXXXXXXXXXXXXXX OPERAÇÕES XXXXXXXXXXXXXXXXXXXXXXXX");
 
         while (true) {
 
@@ -58,25 +54,25 @@ public class DesafioAlura {
             int opcao = inputData.nextInt();
 
             if (opcao == 1) {
-                System.out.println("\nSaldo atualizado: " + saldoInicial);
+                System.out.println("\nSaldo atualizado: " + saldo);
 
             } else if (opcao == 2) {
                 System.out.println("\nValor do depósito: R$ ");
                 double valorDeposito = inputData.nextDouble();
 
-                saldoInicial += valorDeposito;
+                saldo += valorDeposito;
 
-                System.out.println("\nDepósito realizado | Saldo atualizado: R$ " + saldoInicial);
+                System.out.println("\nDepósito realizado | Saldo atualizado: R$ " + saldo);
 
             } else if (opcao == 3) {
                 System.out.println("\nValor da transferência: R$ ");
                 double valorTransferencia = inputData.nextDouble();
 
-                if (valorTransferencia > saldoInicial){
-                    System.out.println("\nSaldo insuficiente | Saldo atual: R$ " + saldoInicial);
+                if (valorTransferencia > saldo){
+                    System.out.println("\nSaldo insuficiente | Saldo atual: R$ " + saldo);
                 } else {
-                    saldoInicial -= valorTransferencia;
-                    System.out.println("\nTransferência realizada | Saldo atualizado: R$ " + saldoInicial);
+                    saldo -= valorTransferencia;
+                    System.out.println("\nTransferência realizada | Saldo atualizado: R$ " + saldo);
                 }
 
             } else if (opcao == 4) {
