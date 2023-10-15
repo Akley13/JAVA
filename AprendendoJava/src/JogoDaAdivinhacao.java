@@ -6,7 +6,7 @@ public class JogoDaAdivinhacao {
         Scanner inputData = new Scanner(System.in);
 
         int tentativas = 5;
-        int numeroSorteado = new Random().nextInt(10);
+        int numeroSorteado = new Random().nextInt(100);
 
         while (tentativas != 0){
             System.out.println("Tentativas: " + tentativas);
